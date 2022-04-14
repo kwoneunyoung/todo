@@ -1,8 +1,12 @@
 <template>
     <div class="container">
-
+    <font-awesome-icon icon="fas fa-trash-can" />
         <div class="todo-container">
-            <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
+            <p>Todo_List</p><span><button>삭제</button></span>
+           
+            <div class="chk-main">
+                <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
+            </div>
         </div>
 
     </div>
@@ -18,11 +22,21 @@ export default {
 </script>
 
 <style>
-    .todo-container {
-        margin-top : 50px;
-    }
-    .chktext {
-        margin-left: 10px;
-        width: 500px;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&display=swap');
+
+
+.todo-container {
+    margin-top : 50px;
+    text-align: center;
+}
+
+.todo-container p {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+
+.chktext {
+    margin-left: 10px;
+    width: 500px;
+}
 </style>
