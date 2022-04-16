@@ -2,7 +2,8 @@
     <div class="container">
     <font-awesome-icon icon="fas fa-trash-can" />
         <div class="todo-container">
-            <p>Todo_List</p><span><button>삭제</button></span>
+            <p>Todo_List</p>
+            <img src="../assets/img/delete.png">
            
             <div class="chk-main">
                 <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
@@ -35,8 +36,16 @@ export default {
     font-size: 50px;
 }
 
+.todo-container img {
+    width: 30px;
+    height: 30px;
+
+}
+
 .chktext {
     margin-left: 10px;
     width: 500px;
 }
+
+
 </style>
