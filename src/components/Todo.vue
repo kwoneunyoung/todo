@@ -2,9 +2,12 @@
     <div class="container">
     <font-awesome-icon icon="fas fa-trash-can" />
         <div class="todo-container">
-            <p>Todo_List</p>
-            <img src="../assets/img/delete.png">
-           
+            <div>
+                <p>
+                <img src="../assets/img/check.png" style="width:50px" @click="chkAll">
+                Todo_List
+                <img src="../assets/img/delete.png" @click="removeAll"></p>
+            </div>
             <div class="chk-main">
                 <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
             </div>
@@ -17,8 +20,14 @@
 <script>
 export default {
     name : 'Todo',
-    
-
+    methods: {
+        removeAll() {
+            console.log("리스트 전체 삭제 시킬 것")
+        },
+        chkAll() {
+            console.log("리스트 전체 체크 시킬 것")
+        }
+    }
 }
 </script>
 
@@ -39,6 +48,7 @@ export default {
 .todo-container img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 
 }
 
