@@ -1,18 +1,17 @@
 <template>
+    
     <div class="container">
-    <font-awesome-icon icon="fas fa-trash-can" />
         <div class="todo-container">
             <div>
-                <p>
+                
                 <img src="../assets/img/check.png" style="width:50px" @click="chkAll">
                 Todo_List
-                <img src="../assets/img/delete.png" @click="removeAll"></p>
+                <img src="../assets/img/delete.png" @click="removeAll">
             </div>
             <div class="chk-main">
                 <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
             </div>
         </div>
-
     </div>
     
 </template>
