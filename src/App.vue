@@ -12,26 +12,20 @@
           <div class="navbar-nav">
             <router-link to="/"><a class="nav-link active" aria-current="page">Home</a></router-link>
             <router-link to="/diary"><a class="nav-link">Diary</a></router-link>
-            <!-- <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled">Disabled</a> -->
           </div>
         </div>
       </div>
     </nav>
     <router-view></router-view>
-    <!-- <Todo /> -->
-
   </div>
 
 </template>
 
 <script>
-// import Todo from './components/Todo.vue'
 
 export default {
   name: 'App',
   components: {
-    // Todo
   }
 }
 </script>
