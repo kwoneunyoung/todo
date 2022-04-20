@@ -8,7 +8,7 @@
                 <img src="../assets/img/delete.png" @click="removeAll">
             </div>
             <div class="chk-main">
-                <input class="chkbox" type="checkbox"><input class="chktext" type="text" placeholder="할일 입력">
+                <input class="chkbox" type="checkbox"><input v-model="todoItem" @change="setTodoItem" class="chktext" type="text" placeholder="할일 입력"> 
             </div>
         </div>
 
@@ -19,12 +19,25 @@
 <script>
 export default {
     name : 'Todo',
+    data() {
+        return {
+            todoItem : '',
+            todoItems : [],
+        }
+    },
     methods: {
         removeAll() {
             console.log("리스트 전체 삭제 시킬 것")
         },
         chkAll() {
             console.log("리스트 전체 체크 시킬 것")
+        },
+        setTodoItem() {
+            // this.item = this.todoItem
+            // console.log(this.item)
+            sessionStorage.setItem('todo', this.todoItem)
+
+
         }
     }
 }
